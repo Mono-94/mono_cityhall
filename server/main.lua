@@ -8,8 +8,8 @@ function IsJobAvailable(job)
     return not JobToCheck.whitelisted
 end
 
-RegisterServerEvent('mono_citiyhall:setJob')
-AddEventHandler('mono_citiyhall:setJob', function(job)
+RegisterServerEvent('esx_joblisting:setJob')
+AddEventHandler('esx_joblisting:setJob', function(job)
     local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
 
@@ -30,6 +30,7 @@ AddEventHandler('mono_citiyhall:setJob', function(job)
     end
 
 end)
+
 
 -- um-idcard 
 RegisterNetEvent('mono_citiyhall:Documentos', function(args)

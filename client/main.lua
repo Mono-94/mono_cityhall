@@ -1,12 +1,4 @@
---─▄▄▀▀█▀▀▄▄       |
---▐▄▌─▀─▀─▐▄▌      |
---──█─▄▄▄─█──▄▄    |
---──▄█▄▄▄█▄─▐──▌   |
---▄█▀█████▐▌─▀─▐   |
---▀─▄██▀██▀█▀▄▄▀   | ─────────────────────────────────────|
--- Symbiote#3027 - Discord: https://discord.gg/Vk7eY8xYV2 |
---────────────────────────────────────────────────────────|
-
+lib.locale()
 
 function CreateBlip(Position, Sprite, Display, Scale, Colour, ShortRange, Name)
   local blip = AddBlipForCoord(Position.x, Position.y, Position.z)
@@ -19,6 +11,7 @@ function CreateBlip(Position, Sprite, Display, Scale, Colour, ShortRange, Name)
   AddTextComponentSubstringPlayerName(Name)
   EndTextCommandSetBlipName(blip)
 end
+
 
 function SetPedPos(Hash, Pos, Scenario)
   RequestModel(Hash)
@@ -34,6 +27,7 @@ function SetPedPos(Hash, Pos, Scenario)
   SetEntityInvincible(NPC, true)
   FreezeEntityPosition(NPC, true)
 end
+
 
 CreateThread(function()
   for k, v in pairs(CityHall.Zones) do
@@ -95,7 +89,7 @@ function CityHallMenu(hall)
   else
     gps = locale('lang7')
   end
-  print(hall)
+
   for i = 1, #trabajos do
     local multi = trabajos[i]
     table.insert(jobslits, {
@@ -126,12 +120,12 @@ function CityHallMenu(hall)
                 },
 
               }) then
-            TriggerServerEvent('mono_citiyhall:setJob', multi.name)
+            TriggerServerEvent('esx_joblisting:setJob', multi.name)
           else
             print('cancel')
           end
         else
-          TriggerServerEvent('mono_citiyhall:setJob', multi.name)
+          TriggerServerEvent('esx_joblisting:setJob', multi.name)
           if CityHall.MarkGPSOnSetJob then
             if multi.name == CityHall.UnemployedNameDB  then
               return

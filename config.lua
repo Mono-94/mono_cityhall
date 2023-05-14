@@ -12,7 +12,7 @@ CityHall = {}
 
 CityHall.Debug = false
 
-CityHall.Type = 'ox_textui'   -- ox_trget/ox_textui
+CityHall.Type = 'ox_target'   -- ox_target/ox_textui
 
 CityHall.TextUiKey = 38       -- Default E (38)
 
@@ -23,36 +23,11 @@ CityHall.MarkGPSOnSetJob = true   -- Cuando el jugador obtiene el trabajo selecc
 CityHall.UnemployedNameDB = 'unemployed'    -- Default ESX unemployed 
 
 CityHall.ProgressBar = {
-    enable = true,
+    enable = true,  
     time = 2000,
 
 }
 
-CityHall.JobPosStart = {
-    ['fisherman'] = {                             -- Job DB name
-        PosStart = vec3(868.39, -1639.75, 30.33), -- Job start position
-    },
-
-    ['fueler'] = {                               -- Job DB name
-        PosStart = vec3(557.93, -2327.90, 5.82), -- Job start position
-    },
-
-    ['lumberjack'] = {                             -- Job DB name
-        PosStart = vec3(1200.63, -1276.87, 34.38), -- Job start position
-    },
-
-    ['miner'] = {                                       -- Job DB name
-        PosStart = vec3(892.0762, -2173.6021, 32.2863), -- Job start position
-    },
-
-    ['slaughterer'] = {                             -- Job DB name
-        PosStart = vec3(-1071.13, -2003.78, 15.78), -- Job start position
-    },
-
-    ['tailor'] = {                               -- Job DB name
-        PosStart = vec3(706.73, -960.90, 30.39), -- Job start position
-    },
-}
 
 CityHall.Zones = {
     ['City Hall'] = { -- Name Blip
@@ -119,6 +94,31 @@ CityHall.Zones = {
     }]]
 }
 
+CityHall.JobPosStart = {
+    ['fisherman'] = {                             -- Job DB name
+        PosStart = vec3(868.39, -1639.75, 30.33), -- Job start position
+    },
+
+    ['fueler'] = {                               -- Job DB name
+        PosStart = vec3(557.93, -2327.90, 5.82), -- Job start position
+    },
+
+    ['lumberjack'] = {                             -- Job DB name
+        PosStart = vec3(1200.63, -1276.87, 34.38), -- Job start position
+    },
+
+    ['miner'] = {                                       -- Job DB name
+        PosStart = vec3(892.0762, -2173.6021, 32.2863), -- Job start position
+    },
+
+    ['slaughterer'] = {                             -- Job DB name
+        PosStart = vec3(-1071.13, -2003.78, 15.78), -- Job start position
+    },
+
+    ['tailor'] = {                               -- Job DB name
+        PosStart = vec3(706.73, -960.90, 30.39), -- Job start position
+    },
+}
 
 
 
