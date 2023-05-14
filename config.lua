@@ -46,7 +46,7 @@ CityHall.Zones = {
         ShortRange = true,     -- Blip Short Range
         -- Um-idcard
         -- Fivem post = https://forum.cfx.re/t/free-um-idcard-mugshot-card-maker/5067690 // GitHub = https://github.com/alp1x/um-idcard
-        Um_idcard = true, 
+        Um_idcard = false, 
         documents = {
             ['id_card'] = { --- Item name
                 title = 'Recover ID Card',
