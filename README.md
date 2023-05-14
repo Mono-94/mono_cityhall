@@ -1,4 +1,4 @@
-[![M O N O](https://cdn.discordapp.com/attachments/715130970294059088/1044855172494532628/discord.png)](https://discord.gg/Vk7eY8xYV2)
+
 
 
 The part that sets the job I copied from esx_joblisting. ☺
@@ -14,3 +14,9 @@ optional
 
 um-idcard
 https://github.com/alp1x/um-idcard
+
+
+
+
+
+[![M O N O](https://static.wikia.nocookie.net/discord/images/d/dd/Discord.png/revision/latest?cb=20210319023006&path-prefix=es)](https://discord.gg/Vk7eY8xYV2)
