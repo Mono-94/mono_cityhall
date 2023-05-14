@@ -8,8 +8,8 @@ function IsJobAvailable(job)
     return not JobToCheck.whitelisted
 end
 
-RegisterServerEvent('esx_joblisting:setJob')
-AddEventHandler('esx_joblisting:setJob', function(job)
+RegisterServerEvent('mono_cityhall:')
+AddEventHandler('mono_cityhall:', function(job)
     local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
 

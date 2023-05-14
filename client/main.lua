@@ -120,7 +120,7 @@ function CityHallMenu(hall)
                 },
 
               }) then
-            TriggerServerEvent('esx_joblisting:setJob', multi.name)
+            TriggerServerEvent('mono_cityhall:SetJob', multi.name)
             if CityHall.MarkGPSOnSetJob then
               if multi.name == CityHall.UnemployedNameDB  then
                 return
@@ -131,7 +131,7 @@ function CityHallMenu(hall)
             print('cancel')
           end
         else
-          TriggerServerEvent('esx_joblisting:setJob', multi.name)
+          TriggerServerEvent('mono_cityhall:SetJob', multi.name)
           if CityHall.MarkGPSOnSetJob then
             if multi.name == CityHall.UnemployedNameDB  then
               return
