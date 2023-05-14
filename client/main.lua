@@ -49,7 +49,7 @@ CreateThread(function()
             onSelect = function()
               CityHallMenu(k)
             end,
-            icon = 'fa-solid fa-cube',
+            icon = 'fa-solid fa-'..CityHall.Icon,
             label = k,
           }
         }
@@ -147,16 +147,16 @@ function CityHallMenu(hall)
 
 
   table.insert(menuPrint, {
-    title = 'Centro de empleo',
-    description = 'This button is disabled',
+    title = locale('lang9'),
+    description = locale('lang12'),
     menu = 'menu_lista_trabajos',
     icon = CityHall.Icon,
   })
 
   if CityHall.Zones[hall].Um_idcard then
     table.insert(menuPrint, {
-      title = 'Documentos',
-      description = 'This button is disabled',
+      title = locale('lang10'),
+      description = locale('lang11'),
       menu = 'Documentos_menu',
       icon = 'id-card',
     })
@@ -176,7 +176,7 @@ function CityHallMenu(hall)
 
   lib.registerContext({
     id = 'Documentos_menu',
-    title = 'Documentos',
+    title = locale('lang10'),
     menu = 'menu_ayunta_prin',
     options = IdCards
   })
