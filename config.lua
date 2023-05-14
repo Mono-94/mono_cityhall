@@ -12,12 +12,6 @@ CityHall = {}
 
 CityHall.Debug = false
 
-CityHall.Version = true
-
-CityHall.Mono_society = false -- Depenedencia mono_society
-
-CityHall.Um_idcard = false    -- Dependecia Fivem post = https://forum.cfx.re/t/free-um-idcard-mugshot-card-maker/5067690 // GitHub = https://github.com/alp1x/um-idcard
-
 CityHall.Type = 'ox_textui'   -- ox_trget/ox_textui
 
 CityHall.TextUiKey = 38       -- Default E (38)
@@ -63,11 +57,11 @@ CityHall.JobPosStart = {
 CityHall.Zones = {
     ['City Hall'] = { -- Name Blip
         -- Position 
-        Pos = vec4(-550.8719, -190.2443, 36.7226, 178.2979),
+        Pos = vec4(-261.5454, -965.2300, 30.2241, 117.1752),--vec4(-550.8719, -190.2443, 36.7226, 178.2979),
         -- NPC Options
         NPC = true,                    -- Activar/desactivar NPC
-        Hash = 'cs_debra',                       -- Hash NPC 
-        Scenario = "PROP_HUMAN_SEAT_COMPUTER",    -- Scenario NPC
+        Hash = 'cs_debra',             -- Hash NPC 
+        Scenario = false,              -- Scenario NPC
         -- Blip
         Blip = true,           -- Activar/desactivar blip
         Sprite = 407,          -- Blip sprite
@@ -77,10 +71,10 @@ CityHall.Zones = {
         ShortRange = true,     -- Blip Short Range
         -- Um-idcard
         -- Fivem post = https://forum.cfx.re/t/free-um-idcard-mugshot-card-maker/5067690 // GitHub = https://github.com/alp1x/um-idcard
-        Um_idcard = true, -- Dependecia Fivem post = https://forum.cfx.re/t/free-um-idcard-mugshot-card-maker/5067690 // GitHub = https://github.com/alp1x/um-idcard
+        Um_idcard = true, 
         documents = {
             ['id_card'] = { --- Item name
-                title = 'recover ID Card',
+                title = 'Recover ID Card',
                 description = 'Recover your lost document.',
             },
         }

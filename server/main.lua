@@ -46,15 +46,15 @@ RegisterNetEvent('mono_citiyhall:Documentos', function(args)
 end)
 
 lib.callback.register('mono_cityhall:GetJobs', function()
-    local jobs = ESX.GetJobs()
-    local Trabajos = {}
-    for k, v in pairs(jobs) do
+    local GetESXJobs = ESX.GetJobs()
+    local Jobs = {}
+    for k, v in pairs(GetESXJobs) do
         if v.whitelisted == false then
-            Trabajos[#Trabajos + 1] = { 
+            Jobs[#Jobs + 1] = { 
                 label = v.label,
                 name = k 
             }
         end
     end
-    return Trabajos
+    return Jobs
 end)

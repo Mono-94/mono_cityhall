@@ -63,8 +63,7 @@ CreateThread(function()
     elseif CityHall.Type == 'ox_textui' then
       local point = lib.points.new({
         coords = vec3(v.Pos.x, v.Pos.y, v.Pos.z),
-        distance = 5,
-        dunak = 'nerd',
+        distance = 3,
       })
 
       function point:onEnter()
