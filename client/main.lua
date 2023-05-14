@@ -140,7 +140,7 @@ function CityHallMenu(hall)
 
   lib.registerContext({
     id = 'menu_lista_trabajos',
-    title = 'Lista de trabajos',
+    title = locale('lang13'),
     menu = 'menu_ayunta_prin',
     options = jobslits
   })
