@@ -121,6 +121,12 @@ function CityHallMenu(hall)
 
               }) then
             TriggerServerEvent('esx_joblisting:setJob', multi.name)
+            if CityHall.MarkGPSOnSetJob then
+              if multi.name == CityHall.UnemployedNameDB  then
+                return
+              end
+              SetNewWaypoint(CityHall.JobPosStart[multi.name].PosStart.x, CityHall.JobPosStart[multi.name].PosStart.y)
+            end
           else
             print('cancel')
           end
@@ -130,7 +136,7 @@ function CityHallMenu(hall)
             if multi.name == CityHall.UnemployedNameDB  then
               return
             end
-              SetNewWaypoint(CityHall.JobPosStart[multi.name].PosStart.x, CityHall.JobPosStart[multi.name].PosStart.y)
+            SetNewWaypoint(CityHall.JobPosStart[multi.name].PosStart.x, CityHall.JobPosStart[multi.name].PosStart.y)
           end
         end
       end,
